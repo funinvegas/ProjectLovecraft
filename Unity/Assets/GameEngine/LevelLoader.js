@@ -3,7 +3,8 @@ import System.IO;
 import SimpleJSON;
 
 var mapFile:String = "";
-private var tileIDToSpriteMap: Array;
+private var tileIDToSpriteMap: Array = new Array();
+private var tileIDs:Array = new Array();
 
 function Start () {
    if (mapFile) {
@@ -14,6 +15,7 @@ function Start () {
    Debug.Log(fileData);
    var pathToMap = mapFile.Substring(0, Mathf.Max(mapFile.LastIndexOf('\\'), mapFile.LastIndexOf('/')) + 1);
    LoadTileSets(fileData['tilesets'].AsArray, pathToMap);
+   LoadTileIds(fileData[
   } else {
   	Debug.Log("Missing Map File Name");
   }
@@ -40,52 +42,34 @@ function ReadFile(filepathIncludingFileName : String) {
         input = sr.ReadLine();
         if (input == null) { break; }
         returnVal += input;
-        Debug.Log("line="+input);
+        Debug.Log(input);
     }
     sr.Close();
     return returnVal;
 }
 
+function FilePathToResourcePath(filePath:String) {
+	var resourceExtensionStart = filePath.LastIndexOf('.');
+	var resourcesString = "Resources";
+	var resourcePathStart = filePath.IndexOf(resourcesString) + resourcesString.Length + 1;
+	return filePath.Substring(resourcePathStart, resourceExtensionStart - resourcePathStart);
+}
+
 function LoadTileSets(tileSets: JSONArray, referencePath: String) {
-	/*var tileID = 0;
+	var tileID = 0;
 	for (var i = 0; i < tileSets.Count; ++i) {
 	    var tilesAcross:Number = tileSets[i]['imagewidth'].AsInt / tileSets[i]['tilewidth'].AsInt;
 		var tilesTall:Number = tileSets[i]['imageheight'].AsInt / tileSets[i]['tileheight'].AsInt;
 		var image:String = tileSets[i]['image'].Value;
-		var resourceName = Application.dataPath + referencePath + image.Substring(0, image.LastIndexOf('.'));
-		var resourceExtension = image.Substring(image.LastIndexOf('.'));
-		*/
-		var resourceName = "PublicDomain/tiles_12";
-		var textures = Resources.LoadAll(resourceName, Texture2D);
+		var resourceName = FilePathToResourcePath(image);
 		Debug.Log(resourceName);
+		//var resourceName = "PublicDomain/tiles_12";
+		var textures:Array = Resources.LoadAll(resourceName, Sprite);
 		Debug.Log(textures);
-		Debug.Log(textures.Length);
-		textures = Resources.LoadAll(resourceName, Sprite);
-		Debug.Log(resourceName);
-		Debug.Log(textures);
-		Debug.Log(textures.Length);
-		return;
-/*	    string[] names = new string[textures.Length];
-	     
-	    for(int ii=0; ii< names.Length; ii++) {
-	    	names[ii] = textures[ii].name;
-	    }
-  */   
-    //Sprite sprite = textures[Array.IndexOf(names, "textureName")];
-	/*	
-		
-		for(var tileX = 0; tileX < tilesAcross; ++tileX) {
-			for(var tileY = 0; tileY < tilesTall; ++tileY) {
-			    var assetPath:String = resourceName + "_" + tileID;// + resourceExtension;
-			    Debug.Log(assetPath);
-//			    Resources.LoadAssetAtPath
-				var texture:Texture2D = Resources.LoadAssetAtPath(assetPath, Texture2D) as Texture2D;
-//				var texture:Texture2D = AssetDatabase.LoadAssetAtPath(assetPath, Texture2D) as Texture2D;
-				Debug.Log(texture);
-				tileIDToSpriteMap.Push(texture);
-				tileID += 1;
-			}
+		Debug.Log(textures.length);
+		for(var texIndex = 0; texIndex < textures.length; ++texIndex) {
+			tileIDToSpriteMap.Push(textures[texIndex]);
 		}
-	}*/
+	}
 }
 
