@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="20" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="terrain_atlas" tilewidth="32" tileheight="32">
+  <image source="../../../../Project X/terrain_atlas.png" trans="ffffff" width="1024" height="1024"/>
+ </tileset>
+ <tileset firstgid="1025" name="base_out_atlas" tilewidth="32" tileheight="32">
+  <image source="../../../../Project X/base_out_atlas.png" trans="ffffff" width="1024" height="1024"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztkssNwjAQRFcsfSSdJG1wInXwC3XwSVIJUAlQCeHlZllo1yEXDoz0vHMYWWNrMxHJIXNmoyItdGr7gmwp/ryQvcJNbb8kW4k/72Qf8FTb12T34s8X2R5kbvsW24k//5qmfsYx7IM6PlEZ+XzYB7V9qgqyJVRq+0GLhJ6p+7firjVsYAs7qCM/RgfyRzjBGRpoIz9WYcdYKX9hdYzf+c19ocJ3Wr09ffr/sPeUXr+kN20iWqw=
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzlkmsKgmAQRUenTfTUbfTUhVS6E1tJtZJqJdU2elnHf4IxfkgQ1IHDXOQyoKPIZwkxcJiuxBg5zK2KrHGjdk7pJlI/D3R3uFc7r+hmUj/PdI94Ujs70xLJ6T/Vzv/GxRO54g3v+MDca76v7Yt0sIs97OPAr/aS4psXz9XOQ/IIxzjBKc7e7MvoBhiqncvM2bPApV9955RuhLHa2Zkv/3+fuG0Z67ZNKN/5l3kB36BIGA==
+  </data>
+ </layer>
+ <layer name="Tile Layer 3" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzlktsJwkAQRScZm/CZtOEzKURNOtFKjJWolaht+IqefAhBZLIEhIAXDvd+3J1llhVptgIIHdxVEcQO7qoEUgfPVGQLG7Xziu5aqn1P9wA7tXNGdyvVfqJ7hqPa2VXPotsSybUi/1AXT+QKN7jDA3Kv/ry2L9KBLvSgDwO//rwhZ0cwhglMYVZj3rc958xZwPI9j7dOijf37ey6Z1j8VQjUztae5XtiuilEaudPlfcs39OE//cPegGiJlOX
+  </data>
+ </layer>
+ <layer name="Tile Layer 4" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBhZQAGI5YmgiQUOQGxPBE0sSADieCJoYkEDENcTQRMLFgDxfCLoUTDw4CcjA8MvIP7NSB3zJJkYGKSAWJqJOuZZAs2xAmJrKpk3CugPACdSFqE=
+  </data>
+ </layer>
+ <layer name="Tile Layer 5" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFlAB5IFYggiYW2AOxAxE0sSAeiBOIoIkF9UDcQARNLJgPxAuIoEfBKBgFgw8AAG1kEqg=
+  </data>
+ </layer>
+</map>
