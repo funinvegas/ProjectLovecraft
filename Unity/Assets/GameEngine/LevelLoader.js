@@ -55,7 +55,7 @@ function LoadTileSets(tileSets: JSONArray, referencePath: String) {
 		var resourceName = Application.dataPath + referencePath + image.Substring(0, image.LastIndexOf('.'));
 		var resourceExtension = image.Substring(image.LastIndexOf('.'));
 		*/
-		var resourceName = "PublicDomain";
+		var resourceName = "PublicDomain/tiles_12";
 		var textures = Resources.LoadAll(resourceName, Texture2D);
 		Debug.Log(resourceName);
 		Debug.Log(textures);

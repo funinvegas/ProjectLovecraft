@@ -20,7 +20,7 @@
  "tilesets":[
         {
          "firstgid":1,
-         "image":"..\/..\/PublicDomain\/tiles_12.png",
+         "image":"..\/..\/Resources\/PublicDomain\/tiles_12.png",
          "imageheight":224,
          "imagewidth":400,
          "margin":0,
