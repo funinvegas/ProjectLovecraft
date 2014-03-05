@@ -14,28 +14,28 @@
  </tileset>
  <layer name="Terrain_Ground" width="50" height="50">
   <data encoding="base64" compression="zlib">
-   eJyN11ty20gQRFGHxU3I2oGXMmsBCOz/a6Qwm746LEzMRwdJoLu6HplZxeP248f2ue6fa3+s8/H7ePzeHut4vOue9ft47Fnv1vste/bYW/v6fX0eObve17/6dnDnkc9l557zR8733Tq3cnHmTP1sDPd8HoONLXuP2NvYs3J3cn7d1Zgau3lvvfr+uH2voXlYdzfedefJfuNvzMbRGmyDvdZ+1WG9v3NPMVk/62vj2W6vfooB6yi2ek/PrneN8bx9z/Ex2NywL4fEQ3Oy9mjfPO7Du4kL61nxUlydw/7Wwvx7X/M7cctYyqVyrufldvPSXDZvx+01X+VglzhuLnq22lY/rnRSvBefPa+m9Zw1NtZqinpV/0/u3nh2x/45nDH2+3B3fVLHJ/21vsVR/dxvs6/yyjpZc7leLFbjrK26MNVkwoexqY/G3Xusk5pXP9QH66MOVjfV2PbN8t377VV39pVT1TV1crq/nNiwUTyUP61H6//75+vSl6serBZPPcR5xPubj+Jj570c8a5/fr6uKZ/F5MZz9UHMV8PUH7Xyqn/ZJ/Zh/853NcQ5corNHiV/7OOttTG3XrUjz5xJPr6+v/1Z9il1qtqmxnbWEDfiQz1rHa9mlaknNL8fWQf3W5+r+NQGtd/cyW35cbKsh1hb9fj1ud6Ti9a1d6p9Ex/tDc1Z+dW9U16cS/4L/6seXzF84cpYnWfkuTHV58kXc17fq+0+L+7sL8uf1qN+eKa4bX36/Ymjt7+8W/Z/PX6Ls2le0GcxNfWgxY3F8/JN+yf3i5dnjt++5+c9cVQT5KyzRHnd+cZa3RPH4seEm/+j+c88PbTvPXbNlb3IeUCtL0fUnPVcfuh/+4W6pF7ek/uPxNeaOHPZU62T88gU20G+Jj7UV+eTYuQZY2rRvc8+Fd/VeXPmb3Vqx5a6e7BPzZ10fPmz/F01eGrV25972ivKZftp+4i576d9+gpbvae56fPqazm9+F6slZ+dl6Z+Wv+cDby32rD0sTE0b82lMT7vf/uL08azamTPbl4mHamGqZvn7RU/6/lT6wc/q3/2ZeeDtRbOit0pR2Ld2aC/fTbNgSc4aF4X9paPiwPrXZ/33EfsqeX+53B2bMyNc5rf5UTrUh8W1ruac31ez9of1cIJZ8WXOqX2XPXT7lPHnW/3YVWrqrVLy4rn6sTVDK3mi+XOWl3ncN55wD6z87s4u5pL1N/mzF5X/+u7M9pU056zL6kbzrZLt4q/9bs6IQa03fnY/07d2xxut9ccT/+dTvaJjW86+fY9hg/O2MvVYjlQblWbqp9q8ssMm9ic6WpLzk1zYPnY3jP55NxVf8TepIVqvLODc491Vm/aY+w5xYZ4U4vbx5yfmn8x0zyqXdq0PsVkZ8ITu72neCuH2z/sw3KheTS/02w37XfGuMJO/fF/jHqpHjc38ra+qUPOEObHmpVv3ef85H+AxncM+2q7WGzcPp/y2prYN07WNJ+XJxM25LOzk33eWtr7er77J1+cozfO2rfsofbgSUfEz2R78mvSIv2T0+bUvBq3OjvpbvlgfaccOD+Wv2KvvpdbJ3YnDaje9Yzafw72zYEYnvqTc46x2sOc3ew5O/bMrzw6sV9cyMPJ96l/thb2ruL5zh7n1P5uHGrAfmHTGUi9VN+qT7VtP5B/1vKqvhNXT+xPOZ5mMfltTTsTVaeKC882B+Jk44y8K37c29qpdRuf9o5qj7lU39on1X3tGFtxPGHHecr+75wwzWb2QJ9XD4s9+/aUN3PkTGOvmbR80hK5eLA6Y7VmvUPu6luXOLRm6u3Bfmcmc3SFCzW2WDCvk8bW5r+R+y70
+   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
   </data>
  </layer>
  <layer name="Terrain_Clear" width="50" height="50">
   <data encoding="base64" compression="zlib">
-   eJztllEOATEURTszfkQyFmAFIhnrEME6RMQ31oBv7MROsAKsAD9e0zYmkyIm01bHPcnNxA/vZHpfMQYAAP/JKWDsrMklcD3Zd1RD8exFjPUpg0h8roXuZsoD9+AObUqjwlgiXXz0GEsHlYmnHguauy5dYnquPPRoynmnNPuMMpf9aHnm0ZHzrmn+DWUrPbqeeQzD567apXbWyDMPDu/5nnKgHCPRcx/hHlfKjXL33CMNPASqb+9igqI91H1kGxPvo10Cj+z32cK0R2zpnJn2UP+hTbtke6l+Ny+6c5VY6kyRLq76oSjKxbUHR+fy6U7LxsXO1eHqHjOBCRdb+zcLd1nmyKtZbe2sosC5/E3K5qLrEAAAAAAAAADY4gFWGj8q
+   eJztlltKAzEUhk9nhCBKXYALEFHadYiomxBBRHzWvoqXB/VZffW6BXeirkBdgfriHybBMZ60dphJmno++BkaSno+JuekRIIgCP+TlxbRK5O3VuzKhmMyK54rOdEqspYXn6eyeDVVQXtohy4yO0HUMS4pemwbB5udRD1OUPeMcWnjeZagx7ypdxe17yE90x8LiXksmXrPUf8Fcmk8lhPz2My+Z9VDaWZtJeah0X3+iDwhz3nR5ymiPd6RD+QzcY8y4+qxrogOkSMmx8iG+vl922/9EsNjH3XeIndM7pEDx8PeR6EZ5HGFOq/75IZ5H90R9NBMq99rvnV3v1D8xWOxVK9S/Lpvv3agczbsvJrzvBvffvY/dNMubl/a360Kd646gXqmTpdY/WGpyyW2h4ZzGXSnuYkxczli3WNN0IRLqPnrol1OK8RXa6iZVRdyLkeTcXPhekgQBEEQBEEQBCEUXxUaUKA=
   </data>
  </layer>
  <layer name="Terrain_Clear2" width="50" height="50">
   <data encoding="base64" compression="zlib">
-   eJztzqERADAIADGubNtdunM1ngOTmLcfAQAAc+6pBQD6vNw+AAAAAADY9QElxQFp
+   eJzt1LENwCAQA0AERRCTIEbLLtk5NS0gkNBd49ZfvEMAAIB93tgnnFSe0w3WaJfcAfTywG9/aX2PWdVGAQAAAAAb/buWAek=
   </data>
  </layer>
  <layer name="Terrain_Doodads" width="50" height="50">
   <data encoding="base64" compression="zlib">
-   eJzt1LEJgEAMBdDgOYI6iTiUG4prqbWCjVge6Cm8Bx+S7qdJBAAAvGOsIqZ0znM6d4AvWo4ftV6ypdKN8jR1RHtJV5dulKe/9R5+egcAAAAAAM/bATOcCBo=
+   eJztzrEJgEAQBMDFD/5TsUs7FKtSGzAwUTAS1GQGFm5hg0sAAOAbY5dM5bjncnQA3rPUZD1lq39/9Ezfrn1o9zsAAAAAANgBMfAHZA==
   </data>
  </layer>
  <objectgroup name="Character Spawn" width="50" height="50">
   <object name="Character Starting Point" x="736" y="640" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Collission_Walking" width="50" height="50">
+ <objectgroup name="Collission_Walking" width="50" height="50" visible="0">
   <object x="689" y="430" width="129" height="210"/>
   <object x="690" y="672" width="128" height="64"/>
   <object x="690" y="737">
@@ -48,7 +48,7 @@
    <polygon points="0,0 1,96 -26,96"/>
   </object>
   <object x="922" y="848" width="397" height="94"/>
-  <object x="1329" y="637" width="283" height="326"/>
+  <object x="1329" y="637" width="271" height="326"/>
   <object x="1328" y="832">
    <polygon points="0,0 -9,18 1,131"/>
   </object>
