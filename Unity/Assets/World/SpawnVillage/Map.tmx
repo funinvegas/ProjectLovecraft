@@ -35,7 +35,7 @@
  <objectgroup name="Character Spawn" width="50" height="50">
   <object name="Character Starting Point" x="736" y="640" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Collission_Walking" width="50" height="50" visible="0">
+ <objectgroup name="Collission_Walking" width="50" height="50">
   <object x="689" y="430" width="129" height="210"/>
   <object x="690" y="672" width="128" height="64"/>
   <object x="690" y="737">
