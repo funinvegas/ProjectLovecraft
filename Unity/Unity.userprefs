@@ -1,11 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\GameEngine\LevelLoader.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\World\SpawnVillage\Map.json">
     <Files>
-      <File FileName="Assets\GameEngine\LevelLoader.js" Line="1" Column="1" />
-      <File FileName="Assets\GameEngine\LevelLoader.js" Line="20" Column="1" />
-      <File FileName="Assets\World\SpawnVillage\Map.json" Line="1" Column="1" />
-      <File FileName="Assets\plugins\SimpleJSON.cs" Line="1" Column="1" />
+      <File FileName="Assets\GameEngine\LevelLoader.js" Line="8" Column="1" />
+      <File FileName="Assets\World\SpawnVillage\Map.json" Line="464" Column="2" />
+      <File FileName="Assets\plugins\SimpleJSON.cs" Line="1044" Column="10" />
       <File FileName="Assets\GameEngine\TileLayer.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
