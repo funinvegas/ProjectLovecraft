@@ -18,6 +18,8 @@ class TileObject {
 	 var x:Number = 0;
 	 var y:Number = 0;
 	 var polygon:Array = new Array();
+	 var ellipse = false;
+	 var polyline:Array = new Array();
 	 
 	function InitFromJSON( json:JSONNode) {
 		height = json['height'].AsInt || 0;
@@ -27,8 +29,11 @@ class TileObject {
 		width = json['width'].AsInt || 0;
 		x = json['x'].AsInt || 0;
 		y = json['y'].AsInt || 0;
+		ellipse = json['ellipse'].AsBool || false;
+		
 		var jsonProp = json['properties'].AsArray;
 		var i = 0;
+		var point = new TilePoint();
 		if(jsonProp) {
 			for(i = 0; i < jsonProp.Count; ++i) {
 				var prop = new TileProperty();
@@ -37,13 +42,22 @@ class TileObject {
 				properties.Push(prop);
 			}
 		}
-		var jsonPoly = json['polygons'].AsArray;
-		if(jsonProp) {
-			for(i = 0; i < jsonProp.Count; ++i) {
-				var point = new TilePoint();
-				point.x = jsonProp[i]['x'].AsInt || 0;
-				point.y = jsonProp[i]['y'].AsInt || 0;
+		var jsonPoly = json['polygon'].AsArray;
+		if(jsonPoly) {
+			for(i = 0; i < jsonPoly.Count; ++i) {
+				point = new TilePoint();
+				point.x = jsonPoly[i]['x'].AsInt || 0;
+				point.y = jsonPoly[i]['y'].AsInt || 0;
 				polygon.Push(point);
+			}
+		}
+		var jsonPolyline = json['polyline'].AsArray;
+		if(jsonPolyline) {
+			for(i = 0; i < jsonPolyline.Count; ++i) {
+				point = new TilePoint();
+				point.x = jsonPolyline[i]['x'].AsInt || 0;
+				point.y = jsonPolyline[i]['y'].AsInt || 0;
+				polyline.Push(point);
 			}
 		}
 	}
