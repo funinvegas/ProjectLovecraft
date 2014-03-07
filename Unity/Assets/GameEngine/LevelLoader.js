@@ -21,10 +21,35 @@ function Start () {
   	Debug.Log("Missing Map File Name");
   }
   DrawTileLayers();
+ 
+ 	Debug.Log(" Screen width = " + Screen.width);
+ 	Debug.Log(" Screen height = " + Screen.height);
+	 // set the camera to the correct orthographic size (so scene pixels are 1:1)
+	
+	// if the resoltuion is 1900x1024.... a 32x 32 is taller than wide.
+	
+//	var s_baseOrthographicSize = Camera.main.pixelHeight / 32.0d / 2;//(Screen.width / Screen.height);
+//	Camera.main.orthographicSize = s_baseOrthographicSize;
+//	Camera.main.aspect = 2;
+	Camera.main.orthographicSize = 3;
 }
-
+var lastOrthHeight = 0d;
 function Update () {
-
+	/*var pixelHeight = Camera.main.pixelHeight;
+	var tilesHeight = Mathf.Floor(pixelHeight / 32d);
+	var goalTileHeight = 20;
+	var nearestFactorToGoal = Mathf.Round(goalTileHeight/tilesHeight);
+	var orthForTiles = tilesHeight * (0.32d * nearestFactorToGoal);
+	if (orthForTiles != lastOrthHeight) {
+		Debug.Log("Pixel Height = " + pixelHeight);
+		Debug.Log("tielsHeight = " + tilesHeight);
+		Debug.Log("goalTileHeight = " + goalTileHeight);
+		Debug.Log("nearestFactorToGoal = " + nearestFactorToGoal);
+		Debug.Log("orthForTiles = " + orthForTiles);
+		lastOrthHeight = orthForTiles;
+		var s_baseOrthographicSize = orthForTiles;//Camera.main.pixelHeight / 32.0d / 2;//(Screen.width / Screen.height);
+		Camera.main.orthographicSize = s_baseOrthographicSize;
+	}*/
 }
 
 function WriteFile(filepathIncludingFileName : String, content: String)
@@ -88,25 +113,29 @@ function LoadTileLayers(jsonLayers: JSONArray) {
 		
 	}
 }
+function Nearest100th(num:Number) {
+	return Mathf.Round(num * 100) / 100;
+}
 function DrawTileLayer(layer:TileLayer, layerIndex:Number) {
 	var tileData:Array = layer.data;
 	if (tileData.length > 0 ) {
 		var width = layer.width;
 		Debug.Log("Drawing " + tileData.length + " tiles");
-		for( var i = 0; i < tileData.length; ++i) {
+		for( var i = 0d; i < tileData.length; ++i) {
 			var tileID:int = System.Convert.ToInt32(tileData[i]);
 			if (tileID > 0 ) {
 				var sp:Sprite = tileIDToSpriteMap[tileID] as Sprite;
 				if (sp) {
-					var vec:Vector3 = Vector3(transform.position.x + i%width * 0.32, 
-										      transform.position.y + Mathf.Floor(i/width) * -0.32, 
+					var vec:Vector3 = Vector3(transform.position.x + i%width * 0.320000d, 
+										      transform.position.y + Mathf.Floor(i/width) * -0.320000d, 
 										      transform.position.z - layerIndex);
 					Debug.Log("Drawing " + sp.name + " at " + vec.x + "," + vec.y );
-					var obj = Instantiate (sp, vec, Quaternion.identity);
+					//var obj = Instantiate (sp, vec, Quaternion.identity);
 					var t = Instantiate( spriteTemplate, vec, Quaternion.identity);
 				    var spriteRenderer:SpriteRenderer = t.GetComponent(SpriteRenderer);
-				    spriteRenderer.sprite = obj;
+				    spriteRenderer.sprite = sp;
 				    t.transform.parent = transform;
+				    Debug.Log("Bounds = x:" + sp.bounds.size.x + " y:" + sp.bounds.size.y);
 				} else {
 					Debug.Log("Missing Sprite " + tileID);
 				}
