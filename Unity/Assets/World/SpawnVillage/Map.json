@@ -28,7 +28,7 @@
          "name":"Terrain_Clear2",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":50,
          "x":0,
          "y":0
@@ -39,7 +39,7 @@
          "name":"Terrain_Doodads",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":50,
          "x":0,
          "y":0
@@ -316,59 +316,9 @@
                     },
                  "type":"",
                  "visible":true,
-                 "width":53,
-                 "x":1327,
+                 "width":35,
+                 "x":1329,
                  "y":557
-                }, 
-                {
-                 "height":0,
-                 "name":"",
-                 "polyline":[
-                        {
-                         "x":0,
-                         "y":0
-                        }, 
-                        {
-                         "x":11,
-                         "y":-12
-                        }, 
-                        {
-                         "x":25,
-                         "y":-12
-                        }, 
-                        {
-                         "x":25,
-                         "y":-33
-                        }, 
-                        {
-                         "x":20,
-                         "y":-40
-                        }, 
-                        {
-                         "x":45,
-                         "y":-74
-                        }, 
-                        {
-                         "x":268,
-                         "y":-74
-                        }, 
-                        {
-                         "x":269,
-                         "y":3
-                        }, 
-                        {
-                         "x":0,
-                         "y":3
-                        }],
-                 "properties":
-                    {
-
-                    },
-                 "type":"",
-                 "visible":true,
-                 "width":0,
-                 "x":1331,
-                 "y":634
                 }, 
                 {
                  "height":219,
@@ -514,6 +464,52 @@
                  "width":303,
                  "x":1299,
                  "y":442
+                }, 
+                {
+                 "height":0,
+                 "name":"",
+                 "polygon":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":10,
+                         "y":-17
+                        }, 
+                        {
+                         "x":23,
+                         "y":-14
+                        }, 
+                        {
+                         "x":30,
+                         "y":-35
+                        }, 
+                        {
+                         "x":20,
+                         "y":-45
+                        }, 
+                        {
+                         "x":18,
+                         "y":-80
+                        }, 
+                        {
+                         "x":270,
+                         "y":-79
+                        }, 
+                        {
+                         "x":269,
+                         "y":-2
+                        }],
+                 "properties":
+                    {
+
+                    },
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":1330,
+                 "y":638
                 }],
          "opacity":1,
          "type":"objectgroup",

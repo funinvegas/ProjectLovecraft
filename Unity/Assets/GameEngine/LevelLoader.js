@@ -3,6 +3,8 @@ import System.IO;
 import SimpleJSON;
 
 var mapFile:String = "";
+var mapAsset:TextAsset = null;
+
 var spriteTemplate:Transform = null;
 var physicsTemplate:Transform = null;
 private var tileIDToSpriteMap: Array = new Array();
@@ -16,7 +18,8 @@ function Start () {
 	if (mapFile) {
 		var fileName = Application.dataPath + mapFile;
 		Debug.Log("Reading Map File: " + fileName);
-		var fileText = ReadFile(fileName);
+//		var fileText = ReadFile(fileName);
+		var fileText = mapAsset.text;
 		var fileData = JSON.Parse(fileText);
 		Debug.Log(fileData);
 		var pathToMap = mapFile.Substring(0, Mathf.Max(mapFile.LastIndexOf('\\'), mapFile.LastIndexOf('/')) + 1);
@@ -26,11 +29,13 @@ function Start () {
 		Debug.Log("Missing Map File Name");
 	}
 	DrawTileLayers();
+	
+	MaxLeftPixel = transform.position.x - 0.16;
+	MaxRightPixel = transform.position.x + fileData['width'].AsInt * fileData['tilewidth'].AsInt / 100 - 0.16;
+	MaxTopPixel = transform.position.y + 0.16;
+  	MaxBottomPixel = transform.position.y - ((fileData['height'].AsInt * fileData['tileheight'].AsInt / 100) - 0.16);
+
 	LoadPhysics();
-	MaxLeftPixel = transform.position.x + 0.32;
-	MaxRightPixel = transform.position.x + fileData['width'].AsInt * fileData['tilewidth'].AsInt / 100 - 0.64;
-	MaxTopPixel = transform.position.y - 0.32;
-  	MaxBottomPixel = transform.position.y - ((fileData['height'].AsInt * fileData['tileheight'].AsInt / 100) - 0.64);
  
  	Debug.Log(" Screen width = " + Screen.width);
  	Debug.Log(" Screen height = " + Screen.height);
@@ -41,7 +46,7 @@ function Start () {
 //	var s_baseOrthographicSize = Camera.main.pixelHeight / 32.0d / 2;//(Screen.width / Screen.height);
 //	Camera.main.orthographicSize = s_baseOrthographicSize;
 //	Camera.main.aspect = 2;
-	Camera.main.orthographicSize = 3;
+//	Camera.main.orthographicSize = 3;
 }
 var lastOrthHeight = 0d;
 function Update () {
@@ -179,9 +184,46 @@ function DrawPolygon(obj:TileObject) {
 }
 
 function DrawPolyLine(obj:TileObject) {
-	
+	Debug.Log("DrawPolyLine not implemented");
 }
 
+function DrawMapBorders() {
+	var pushPoint = function(array:Array, x:Number, y:Number) {
+		var tp:TilePoint = new TilePoint();
+		tp.x = x * 100;
+		tp.y = y * -100;
+		array.Push(tp);
+	};
+	
+	var leftObj = new TileObject();
+	pushPoint(leftObj.polygon, MaxLeftPixel - 1, MaxTopPixel);
+	pushPoint(leftObj.polygon, MaxLeftPixel + 0.24, MaxTopPixel);
+	pushPoint(leftObj.polygon, MaxLeftPixel + 0.24, MaxBottomPixel);
+	pushPoint(leftObj.polygon, MaxLeftPixel - 1, MaxBottomPixel);
+	DrawPolygon(leftObj);
+
+	var rightObj = new TileObject();
+	pushPoint(rightObj.polygon, MaxRightPixel + 1, MaxTopPixel);
+	pushPoint(rightObj.polygon, MaxRightPixel + 0.08, MaxTopPixel);
+	pushPoint(rightObj.polygon, MaxRightPixel + 0.08, MaxBottomPixel );
+	pushPoint(rightObj.polygon, MaxRightPixel + 1, MaxBottomPixel);
+	DrawPolygon(rightObj);
+
+	var topObj = new TileObject();
+	pushPoint(topObj.polygon, MaxLeftPixel - 1, MaxTopPixel + 1);
+	pushPoint(topObj.polygon, MaxRightPixel + 1, MaxTopPixel + 1);
+	pushPoint(topObj.polygon, MaxRightPixel + 1, MaxTopPixel - 0.48);
+	pushPoint(topObj.polygon, MaxLeftPixel - 1, MaxTopPixel - 0.48);
+	DrawPolygon(topObj);
+
+	var bottomObj = new TileObject();
+	pushPoint(bottomObj.polygon, MaxLeftPixel - 1, MaxBottomPixel - 1);
+	pushPoint(bottomObj.polygon, MaxRightPixel + 1, MaxBottomPixel - 1);
+	pushPoint(bottomObj.polygon, MaxRightPixel + 1, MaxBottomPixel - 0.08);
+	pushPoint(bottomObj.polygon, MaxLeftPixel - 1, MaxBottomPixel - 0.08);
+	DrawPolygon(bottomObj);
+
+}
 function DrawRectangle(obj:TileObject) {
 	var poly:Transform = Instantiate(physicsTemplate, Vector3(-0.16 + transform.position.x + obj.x / 100 + obj.width/200, 0.16 + transform.position.y - obj.y / 100 - obj.height/200, 5), Quaternion.identity);
 	var colider:BoxCollider2D = poly.gameObject.AddComponent("BoxCollider2D") as BoxCollider2D;
@@ -208,6 +250,7 @@ function DrawPhysics(objects:Array) {
 }
 function LoadPhysics() {
 	Debug.Log("LoadPhysics start " + tileLayers.length);
+	DrawMapBorders();
 	var c:String = "Collission_";
 	for( var i = 0; i < tileLayers.length; ++i) {
 		var layer = tileLayers[i] as TileLayer;
