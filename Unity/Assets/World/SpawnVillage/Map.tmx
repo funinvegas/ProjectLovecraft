@@ -22,12 +22,12 @@
    eJztlk1PE0EYx4dd7NpK8EgabnIwRgLn6g1PxKjnBt+oSEKMUcC3ws3wKi+e214V9SvAjW8hfALFuxYu/iczk52usy/dsLNTM//kl203aff59Xme3RJiTsqe//pXkZA/xfxqSZNKgZBTcFzwz11x8qsnbaqofx8cSB4T8HB7zIV6TBU656oGh5Ee9DgKzBXtx60e9JDjGDBTP/oI+angpC/8MxWvczdM2PEir+GOS8hdcM9l7y/F1CbvxoQhHtRhHAz3EzLGXeI85J7UDPF4zh0ELxJ40IievDfEYwd1X+Yugzh+TOgh92SmlG2dcbnG662j9iWwzPfjeoxH+wI7ip68g8f9HF0meb0N1N8ELe5xO+Gs0J7c4H15yV0egIfgEXgMpkENPCmxvj3NwHfO8e9V+9I96xnOH3rxny+j/jZ/JtI9oS7zYAEsglfgNXgD3pZY3+oZ9Y3u+XdwBI5dtufdRN6TFdS4CtbAOtgAm+AD2ALbYCdDjzY4BWcKjxnUuQ42FGyCWc+fryQcFNR1nIeHnKDHCq79BXxV8A2s0focxs2IvSrz+isJ5jVNojx+45qfwOcI9kDTYUxJ+xaFbo+hi+w4EPIbivMN6uAyD/E80p24uaIZlTw879/z1KMh9WPcUA85VxW9aUr9CH6frnTrQVN1/J0QMyX2I/h9g5rmLK1Hi9ff4q/DPMR/6KxdgnsprhsVuR8dfQmZqzFNO9OtS1XqhZipKA+d6caljnqXFCwb4EGjcol7pgXJ456rSl7PsSyShYuu+28w1GU3BWG16rpnnVfsXJqZ/81FtUM2NjY2NjY2NjY2Nja68hc6MpSO
   </data>
  </layer>
- <layer name="Terrain_Clear2" width="50" height="50">
+ <layer name="Terrain_Clear2" width="50" height="50" visible="0">
   <data encoding="base64" compression="zlib">
    eJzt1jEKwkAUhOGQIFlyDCvxGB7F0t5SosHWMqUKHiXexCt4ASegjSAYNmF3H/8Hj4VUM/tYSJZhCs9Z6ATjyvPQCcYxN9Kj30dhoIuVfVjAG4/LykiPtZEeTQQ9tuWw778cK/8sPlrl7TSb951+znZgj9RVRvoujfSwpjGyl3vCPWpl32sOZZo9nDI/vnJ3CfZYKPNNs3P619XULnQiP2flv2iuf/Q4FdPnAQAAAAAAAICYvQAfyREm
   </data>
  </layer>
- <layer name="Terrain_Doodads" width="50" height="50">
+ <layer name="Terrain_Doodads" width="50" height="50" visible="0">
   <data encoding="base64" compression="zlib">
    eJztz0EKgkAYBeAfhdGtBB2yS1nHCBfWBbpLdYEG3KS4cDNk8H3wYB68gZkIAP7dI837Ma3vAH7tVEVc6+k81FMHoJxnE/H6yrvZdq/Pu3POZeO+tK6d90O7vlsa8/tvOfed/AMAAAAAgPI+sXMMng==
   </data>
@@ -65,11 +65,8 @@
   <object x="1438" y="1071">
    <polygon points="0,0 162,-107 162,1"/>
   </object>
-  <object x="1327" y="557" width="53" height="35">
+  <object x="1329" y="557" width="35" height="35">
    <ellipse/>
-  </object>
-  <object x="1331" y="634">
-   <polyline points="0,0 11,-12 25,-12 25,-33 20,-40 45,-74 268,-74 269,3 0,3"/>
   </object>
   <object x="662" y="210" width="182" height="219"/>
   <object x="930" y="482" width="126" height="186"/>
@@ -86,5 +83,8 @@
   <object x="1233" y="379" width="367" height="32"/>
   <object x="1268" y="413" width="331" height="27"/>
   <object x="1299" y="442" width="303" height="32"/>
+  <object x="1330" y="638">
+   <polygon points="0,0 10,-17 23,-14 30,-35 20,-45 18,-80 270,-79 269,-2"/>
+  </object>
  </objectgroup>
 </map>
