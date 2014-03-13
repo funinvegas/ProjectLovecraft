@@ -1,13 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\GameEngine\LevelLoader.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\GameEngine\MainCharector.js">
     <Files>
+      <File FileName="Assets\GameEngine\MainCharector.js" Line="80" Column="31" />
       <File FileName="Assets\World\SpawnVillage\Map.json" Line="1" Column="1" />
       <File FileName="Assets\GameEngine\LevelLoader.js" Line="1" Column="1" />
       <File FileName="Assets\plugins\SimpleJSON.cs" Line="1" Column="1" />
       <File FileName="Assets\GameEngine\TileLayer.js" Line="1" Column="1" />
-      <File FileName="Assets\GameEngine\MainCharector.js" Line="1" Column="1" />
       <File FileName="Assets\Standard Assets (Mobile)\Scripts\SmoothFollow2D.js" Line="1" Column="1" />
+      <File FileName="Assets\GameEngine\CharectorSubAnimation.js" Line="12" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
