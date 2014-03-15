@@ -64,12 +64,20 @@ class PlayerStateWalking extends PlayerState {
 }
 
 class PlayerStateCharging extends PlayerState {
+	var startTime:float = 0;
 	function PlayerStateCharging(previousState:PlayerState) {
 		super(previousState);
-		(player.chargeUp.GetComponent("Animator") as Animator).Play("basicCharge");		
+		startTime = Time.time;
 	}
 	function OnFire1Up() {
 		return new PlayerStateSwinging(this);
+	}
+	function OnFire1Down() {
+		if( startTime > 0 && Time.time - startTime > 0.5) {
+			(player.chargeUp.GetComponent("Animator") as Animator).Play("basicCharge");		
+			startTime = 0;
+		}
+		return this;
 	}
 	function ApplyDirection(xAxis:float, yAxis:float) {
 		player.UpdateDirection(xAxis, yAxis);
@@ -92,15 +100,19 @@ class PlayerStateSwinging extends PlayerState {
 		switch( player.direction ) {
 		case 3:
 			player.weaponSwish.transform.rotation = Quaternion.Euler(0,0,0);
+			player.weaponSwish.transform.localScale.x = -1;
 			break;
 		case 2:
 			player.weaponSwish.transform.rotation = Quaternion.Euler(0,0,90);
+			player.weaponSwish.transform.localScale.x = -1;
 			break;
 		case 4:
 			player.weaponSwish.transform.rotation = Quaternion.Euler(0,0,180);
+			player.weaponSwish.transform.localScale.x = 1;
 			break;
 		case 1:
 			player.weaponSwish.transform.rotation = Quaternion.Euler(0,0,270);
+			player.weaponSwish.transform.localScale.x = 1;
 			break;
 		}
 		player.anim.SetInteger("action", 1);
@@ -181,20 +193,19 @@ function destroyOldState() {
 }
 
 function FixedUpdate () {
+	if (!playerState) return;
 	oldState = playerState;
-	if (Input.GetButtonDown("Fire1")) {
+	if (Input.GetButton("Fire1")) {
 		playerState = playerState.OnFire1Down();
 		destroyOldState();
-	}
-	if (Input.GetButtonUp("Fire1")) {
+	} else {
 		playerState = playerState.OnFire1Up();
 		destroyOldState();
 	}
-	if (Input.GetButtonDown("Fire2")) {
+	if (Input.GetButton("Fire2")) {
 		playerState = playerState.OnFire2Down();
 		destroyOldState();
-	}
-	if (Input.GetButtonUp("Fire3")) {
+	} else {
 		playerState = playerState.OnFire2Up();
 		destroyOldState();
 	}
