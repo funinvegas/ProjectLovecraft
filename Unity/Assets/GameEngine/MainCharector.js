@@ -7,6 +7,7 @@ var direction = 4;
 private var currentAction = 0;
 var weaponSwish:GameObject = null;
 var chargeUp:GameObject = null;
+var mace:GameObject = null;
 private var charging = false;
 
 class PlayerState {
@@ -98,21 +99,25 @@ class PlayerStateSwinging extends PlayerState {
 		super(previousState);
 		Debug.Log("Entering State PlayerStateSwinging");
 		switch( player.direction ) {
-		case 3:
+		case 3: // North
 			player.weaponSwish.transform.rotation = Quaternion.Euler(0,0,0);
 			player.weaponSwish.transform.localScale.x = -1;
+			(player.mace.GetComponent("Animator") as Animator).Play("MaceNorth");
 			break;
-		case 2:
+		case 2: // West
 			player.weaponSwish.transform.rotation = Quaternion.Euler(0,0,90);
 			player.weaponSwish.transform.localScale.x = -1;
+			(player.mace.GetComponent("Animator") as Animator).Play("MaceWest");
 			break;
-		case 4:
+		case 4: // South
 			player.weaponSwish.transform.rotation = Quaternion.Euler(0,0,180);
 			player.weaponSwish.transform.localScale.x = 1;
+			(player.mace.GetComponent("Animator") as Animator).Play("MaceEast");
 			break;
-		case 1:
+		case 1:  // East
 			player.weaponSwish.transform.rotation = Quaternion.Euler(0,0,270);
 			player.weaponSwish.transform.localScale.x = 1;
+			(player.mace.GetComponent("Animator") as Animator).Play("MaceSouth");
 			break;
 		}
 		player.anim.SetInteger("action", 1);
@@ -141,6 +146,7 @@ function Start () {
 	anim.SetInteger("direction", direction);
 	weaponSwish = GameObject.Find("WeaponSwish") as GameObject;
 	chargeUp = GameObject.Find("ChargeUp") as GameObject;
+	mace = GameObject.Find("WeaponMace") as GameObject;
 	
 }
 function ActionFinished() {
