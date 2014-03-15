@@ -8,6 +8,7 @@ private var currentAction = 0;
 var weaponSwish:GameObject = null;
 var chargeUp:GameObject = null;
 var mace:GameObject = null;
+var speedFactor:float = 1;
 private var charging = false;
 
 class PlayerState {
@@ -69,6 +70,7 @@ class PlayerStateCharging extends PlayerState {
 	function PlayerStateCharging(previousState:PlayerState) {
 		super(previousState);
 		startTime = Time.time;
+		player.speedFactor = 0.5;
 	}
 	function OnFire1Up() {
 		return new PlayerStateSwinging(this);
@@ -91,6 +93,7 @@ class PlayerStateCharging extends PlayerState {
 		return this;
 	}
 	function Destroy() {
+		player.speedFactor = 1;
 		(player.chargeUp.GetComponent("Animator") as Animator).Play("Idle");		
 	}
 }
@@ -98,29 +101,34 @@ class PlayerStateSwinging extends PlayerState {
 	function PlayerStateSwinging(previousState:PlayerState) {
 		super(previousState);
 		Debug.Log("Entering State PlayerStateSwinging");
+		player.stopMoving();
 		switch( player.direction ) {
 		case 3: // North
 			player.weaponSwish.transform.rotation = Quaternion.Euler(0,0,0);
 			player.weaponSwish.transform.localScale.x = -1;
 			(player.mace.GetComponent("Animator") as Animator).Play("MaceNorth");
+			player.anim.Play("Swing North");
 			break;
 		case 2: // West
 			player.weaponSwish.transform.rotation = Quaternion.Euler(0,0,90);
 			player.weaponSwish.transform.localScale.x = -1;
 			(player.mace.GetComponent("Animator") as Animator).Play("MaceWest");
+			player.anim.Play("Swing West");
 			break;
 		case 4: // South
 			player.weaponSwish.transform.rotation = Quaternion.Euler(0,0,180);
 			player.weaponSwish.transform.localScale.x = 1;
 			(player.mace.GetComponent("Animator") as Animator).Play("MaceEast");
+			player.anim.Play("Swing South");
 			break;
 		case 1:  // East
 			player.weaponSwish.transform.rotation = Quaternion.Euler(0,0,270);
 			player.weaponSwish.transform.localScale.x = 1;
 			(player.mace.GetComponent("Animator") as Animator).Play("MaceSouth");
+			player.anim.Play("Swing East");
 			break;
 		}
-		player.anim.SetInteger("action", 1);
+		//player.anim.SetInteger("action", 1);
 		player.anim.speed = 1;
 		(player.weaponSwish.GetComponent("Animator") as Animator).Play("SmallSwish");		
 	}
@@ -160,9 +168,11 @@ function OnAnimationEvent(event:String) {
 	playerState = playerState.OnAnimationEvent(event);
 	destroyOldState();
 }
-
+function stopMoving() {
+	rigidbody2D.velocity = new Vector2(0,0);
+}
 function UpdateDirection(xAxis:float, yAxis:float) {
-	rigidbody2D.velocity = new Vector2(xAxis * maxSpeed, yAxis * maxSpeed);
+	rigidbody2D.velocity = new Vector2(xAxis * maxSpeed * speedFactor, yAxis * maxSpeed * speedFactor);
 	var newDirection = direction;
 	if (Mathf.Abs(xAxis) > Mathf.Abs(yAxis)) {
 		// moving east west
