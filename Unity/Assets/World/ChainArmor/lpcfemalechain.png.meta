@@ -52,7 +52,7 @@ TextureImporter:
         y: 1280
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_1
       rect:
@@ -61,7 +61,7 @@ TextureImporter:
         y: 1280
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_2
       rect:
@@ -70,7 +70,7 @@ TextureImporter:
         y: 1280
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_3
       rect:
@@ -79,7 +79,7 @@ TextureImporter:
         y: 1280
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_4
       rect:
@@ -88,7 +88,7 @@ TextureImporter:
         y: 1280
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_5
       rect:
@@ -97,7 +97,7 @@ TextureImporter:
         y: 1280
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_6
       rect:
@@ -106,7 +106,7 @@ TextureImporter:
         y: 1280
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_7
       rect:
@@ -115,7 +115,7 @@ TextureImporter:
         y: 1216
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_8
       rect:
@@ -124,7 +124,7 @@ TextureImporter:
         y: 1216
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_9
       rect:
@@ -133,7 +133,7 @@ TextureImporter:
         y: 1216
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_10
       rect:
@@ -142,7 +142,7 @@ TextureImporter:
         y: 1216
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_11
       rect:
@@ -151,7 +151,7 @@ TextureImporter:
         y: 1216
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_12
       rect:
@@ -160,7 +160,7 @@ TextureImporter:
         y: 1216
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_13
       rect:
@@ -169,7 +169,7 @@ TextureImporter:
         y: 1216
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_14
       rect:
@@ -178,7 +178,7 @@ TextureImporter:
         y: 1152
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_15
       rect:
@@ -187,7 +187,7 @@ TextureImporter:
         y: 1152
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_16
       rect:
@@ -196,7 +196,7 @@ TextureImporter:
         y: 1152
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_17
       rect:
@@ -205,7 +205,7 @@ TextureImporter:
         y: 1152
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_18
       rect:
@@ -214,7 +214,7 @@ TextureImporter:
         y: 1152
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_19
       rect:
@@ -223,7 +223,7 @@ TextureImporter:
         y: 1152
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_20
       rect:
@@ -232,7 +232,7 @@ TextureImporter:
         y: 1152
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_21
       rect:
@@ -241,7 +241,7 @@ TextureImporter:
         y: 1088
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_22
       rect:
@@ -250,7 +250,7 @@ TextureImporter:
         y: 1088
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_23
       rect:
@@ -259,7 +259,7 @@ TextureImporter:
         y: 1088
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_24
       rect:
@@ -268,7 +268,7 @@ TextureImporter:
         y: 1088
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_25
       rect:
@@ -277,7 +277,7 @@ TextureImporter:
         y: 1088
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_26
       rect:
@@ -286,7 +286,7 @@ TextureImporter:
         y: 1088
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_27
       rect:
@@ -295,7 +295,7 @@ TextureImporter:
         y: 1088
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_28
       rect:
@@ -304,7 +304,7 @@ TextureImporter:
         y: 1024
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_29
       rect:
@@ -313,7 +313,7 @@ TextureImporter:
         y: 1024
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_30
       rect:
@@ -322,7 +322,7 @@ TextureImporter:
         y: 1024
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_31
       rect:
@@ -331,7 +331,7 @@ TextureImporter:
         y: 1024
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_32
       rect:
@@ -340,7 +340,7 @@ TextureImporter:
         y: 1024
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_33
       rect:
@@ -349,7 +349,7 @@ TextureImporter:
         y: 1024
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_34
       rect:
@@ -358,7 +358,7 @@ TextureImporter:
         y: 1024
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_35
       rect:
@@ -367,7 +367,7 @@ TextureImporter:
         y: 1024
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_36
       rect:
@@ -376,7 +376,7 @@ TextureImporter:
         y: 960
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_37
       rect:
@@ -385,7 +385,7 @@ TextureImporter:
         y: 960
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_38
       rect:
@@ -394,7 +394,7 @@ TextureImporter:
         y: 960
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_39
       rect:
@@ -403,7 +403,7 @@ TextureImporter:
         y: 960
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_40
       rect:
@@ -412,7 +412,7 @@ TextureImporter:
         y: 960
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_41
       rect:
@@ -421,7 +421,7 @@ TextureImporter:
         y: 960
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_42
       rect:
@@ -430,7 +430,7 @@ TextureImporter:
         y: 960
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_43
       rect:
@@ -439,7 +439,7 @@ TextureImporter:
         y: 960
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_44
       rect:
@@ -448,7 +448,7 @@ TextureImporter:
         y: 896
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_45
       rect:
@@ -457,7 +457,7 @@ TextureImporter:
         y: 896
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_46
       rect:
@@ -466,7 +466,7 @@ TextureImporter:
         y: 896
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_47
       rect:
@@ -475,7 +475,7 @@ TextureImporter:
         y: 896
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_48
       rect:
@@ -484,7 +484,7 @@ TextureImporter:
         y: 896
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_49
       rect:
@@ -493,7 +493,7 @@ TextureImporter:
         y: 896
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_50
       rect:
@@ -502,7 +502,7 @@ TextureImporter:
         y: 896
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_51
       rect:
@@ -511,7 +511,7 @@ TextureImporter:
         y: 896
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_52
       rect:
@@ -520,7 +520,7 @@ TextureImporter:
         y: 832
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_53
       rect:
@@ -529,7 +529,7 @@ TextureImporter:
         y: 832
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_54
       rect:
@@ -538,7 +538,7 @@ TextureImporter:
         y: 832
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_55
       rect:
@@ -547,7 +547,7 @@ TextureImporter:
         y: 832
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_56
       rect:
@@ -556,7 +556,7 @@ TextureImporter:
         y: 832
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_57
       rect:
@@ -565,7 +565,7 @@ TextureImporter:
         y: 832
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_58
       rect:
@@ -574,7 +574,7 @@ TextureImporter:
         y: 832
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_59
       rect:
@@ -583,7 +583,7 @@ TextureImporter:
         y: 832
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_60
       rect:
@@ -592,7 +592,7 @@ TextureImporter:
         y: 768
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_61
       rect:
@@ -601,7 +601,7 @@ TextureImporter:
         y: 768
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_62
       rect:
@@ -610,7 +610,7 @@ TextureImporter:
         y: 768
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_63
       rect:
@@ -619,7 +619,7 @@ TextureImporter:
         y: 768
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_64
       rect:
@@ -628,7 +628,7 @@ TextureImporter:
         y: 768
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_65
       rect:
@@ -637,7 +637,7 @@ TextureImporter:
         y: 768
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_66
       rect:
@@ -646,7 +646,7 @@ TextureImporter:
         y: 768
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_67
       rect:
@@ -655,7 +655,7 @@ TextureImporter:
         y: 768
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_68
       rect:
@@ -664,7 +664,7 @@ TextureImporter:
         y: 768
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_69
       rect:
@@ -673,7 +673,7 @@ TextureImporter:
         y: 704
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_70
       rect:
@@ -682,7 +682,7 @@ TextureImporter:
         y: 704
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_71
       rect:
@@ -691,7 +691,7 @@ TextureImporter:
         y: 704
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_72
       rect:
@@ -700,7 +700,7 @@ TextureImporter:
         y: 704
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_73
       rect:
@@ -709,7 +709,7 @@ TextureImporter:
         y: 704
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_74
       rect:
@@ -718,7 +718,7 @@ TextureImporter:
         y: 704
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_75
       rect:
@@ -727,7 +727,7 @@ TextureImporter:
         y: 704
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_76
       rect:
@@ -736,7 +736,7 @@ TextureImporter:
         y: 704
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_77
       rect:
@@ -745,7 +745,7 @@ TextureImporter:
         y: 704
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_78
       rect:
@@ -754,7 +754,7 @@ TextureImporter:
         y: 640
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_79
       rect:
@@ -763,7 +763,7 @@ TextureImporter:
         y: 640
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_80
       rect:
@@ -772,7 +772,7 @@ TextureImporter:
         y: 640
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_81
       rect:
@@ -781,7 +781,7 @@ TextureImporter:
         y: 640
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_82
       rect:
@@ -790,7 +790,7 @@ TextureImporter:
         y: 640
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_83
       rect:
@@ -799,7 +799,7 @@ TextureImporter:
         y: 640
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_84
       rect:
@@ -808,7 +808,7 @@ TextureImporter:
         y: 640
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_85
       rect:
@@ -817,7 +817,7 @@ TextureImporter:
         y: 640
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_86
       rect:
@@ -826,7 +826,7 @@ TextureImporter:
         y: 640
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_87
       rect:
@@ -835,7 +835,7 @@ TextureImporter:
         y: 576
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_88
       rect:
@@ -844,7 +844,7 @@ TextureImporter:
         y: 576
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_89
       rect:
@@ -853,7 +853,7 @@ TextureImporter:
         y: 576
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_90
       rect:
@@ -862,7 +862,7 @@ TextureImporter:
         y: 576
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_91
       rect:
@@ -871,7 +871,7 @@ TextureImporter:
         y: 576
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_92
       rect:
@@ -880,7 +880,7 @@ TextureImporter:
         y: 576
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_93
       rect:
@@ -889,7 +889,7 @@ TextureImporter:
         y: 576
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_94
       rect:
@@ -898,7 +898,7 @@ TextureImporter:
         y: 576
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_95
       rect:
@@ -907,7 +907,7 @@ TextureImporter:
         y: 576
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_96
       rect:
@@ -916,7 +916,7 @@ TextureImporter:
         y: 512
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_97
       rect:
@@ -925,7 +925,7 @@ TextureImporter:
         y: 512
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_98
       rect:
@@ -934,7 +934,7 @@ TextureImporter:
         y: 512
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_99
       rect:
@@ -943,7 +943,7 @@ TextureImporter:
         y: 512
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_100
       rect:
@@ -952,7 +952,7 @@ TextureImporter:
         y: 512
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_101
       rect:
@@ -961,7 +961,7 @@ TextureImporter:
         y: 512
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_102
       rect:
@@ -970,7 +970,7 @@ TextureImporter:
         y: 448
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_103
       rect:
@@ -979,7 +979,7 @@ TextureImporter:
         y: 448
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_104
       rect:
@@ -988,7 +988,7 @@ TextureImporter:
         y: 448
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_105
       rect:
@@ -997,7 +997,7 @@ TextureImporter:
         y: 448
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_106
       rect:
@@ -1006,7 +1006,7 @@ TextureImporter:
         y: 448
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_107
       rect:
@@ -1015,7 +1015,7 @@ TextureImporter:
         y: 448
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_108
       rect:
@@ -1024,7 +1024,7 @@ TextureImporter:
         y: 384
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_109
       rect:
@@ -1033,7 +1033,7 @@ TextureImporter:
         y: 384
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_110
       rect:
@@ -1042,7 +1042,7 @@ TextureImporter:
         y: 384
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_111
       rect:
@@ -1051,7 +1051,7 @@ TextureImporter:
         y: 384
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_112
       rect:
@@ -1060,7 +1060,7 @@ TextureImporter:
         y: 384
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_113
       rect:
@@ -1069,7 +1069,7 @@ TextureImporter:
         y: 384
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_114
       rect:
@@ -1078,7 +1078,7 @@ TextureImporter:
         y: 320
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_115
       rect:
@@ -1087,7 +1087,7 @@ TextureImporter:
         y: 320
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_116
       rect:
@@ -1096,7 +1096,7 @@ TextureImporter:
         y: 320
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_117
       rect:
@@ -1105,7 +1105,7 @@ TextureImporter:
         y: 320
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_118
       rect:
@@ -1114,7 +1114,7 @@ TextureImporter:
         y: 320
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_119
       rect:
@@ -1123,7 +1123,7 @@ TextureImporter:
         y: 320
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_120
       rect:
@@ -1132,7 +1132,7 @@ TextureImporter:
         y: 256
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_121
       rect:
@@ -1141,7 +1141,7 @@ TextureImporter:
         y: 256
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_122
       rect:
@@ -1150,7 +1150,7 @@ TextureImporter:
         y: 256
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_123
       rect:
@@ -1159,7 +1159,7 @@ TextureImporter:
         y: 256
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_124
       rect:
@@ -1168,7 +1168,7 @@ TextureImporter:
         y: 256
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_125
       rect:
@@ -1177,7 +1177,7 @@ TextureImporter:
         y: 256
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_126
       rect:
@@ -1186,7 +1186,7 @@ TextureImporter:
         y: 256
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_127
       rect:
@@ -1195,7 +1195,7 @@ TextureImporter:
         y: 256
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_128
       rect:
@@ -1204,7 +1204,7 @@ TextureImporter:
         y: 256
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_129
       rect:
@@ -1213,7 +1213,7 @@ TextureImporter:
         y: 256
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_130
       rect:
@@ -1222,7 +1222,7 @@ TextureImporter:
         y: 256
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_131
       rect:
@@ -1231,7 +1231,7 @@ TextureImporter:
         y: 256
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_132
       rect:
@@ -1240,7 +1240,7 @@ TextureImporter:
         y: 256
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_133
       rect:
@@ -1249,7 +1249,7 @@ TextureImporter:
         y: 192
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_134
       rect:
@@ -1258,7 +1258,7 @@ TextureImporter:
         y: 192
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_135
       rect:
@@ -1267,7 +1267,7 @@ TextureImporter:
         y: 192
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_136
       rect:
@@ -1276,7 +1276,7 @@ TextureImporter:
         y: 192
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_137
       rect:
@@ -1285,7 +1285,7 @@ TextureImporter:
         y: 192
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_138
       rect:
@@ -1294,7 +1294,7 @@ TextureImporter:
         y: 192
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_139
       rect:
@@ -1303,7 +1303,7 @@ TextureImporter:
         y: 192
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_140
       rect:
@@ -1312,7 +1312,7 @@ TextureImporter:
         y: 192
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_141
       rect:
@@ -1321,7 +1321,7 @@ TextureImporter:
         y: 192
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_142
       rect:
@@ -1330,7 +1330,7 @@ TextureImporter:
         y: 192
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_143
       rect:
@@ -1339,7 +1339,7 @@ TextureImporter:
         y: 192
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_144
       rect:
@@ -1348,7 +1348,7 @@ TextureImporter:
         y: 192
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_145
       rect:
@@ -1357,7 +1357,7 @@ TextureImporter:
         y: 192
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_146
       rect:
@@ -1366,7 +1366,7 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_147
       rect:
@@ -1375,7 +1375,7 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_148
       rect:
@@ -1384,7 +1384,7 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_149
       rect:
@@ -1393,7 +1393,7 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_150
       rect:
@@ -1402,7 +1402,7 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_151
       rect:
@@ -1411,7 +1411,7 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_152
       rect:
@@ -1420,7 +1420,7 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_153
       rect:
@@ -1429,7 +1429,7 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_154
       rect:
@@ -1438,7 +1438,7 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_155
       rect:
@@ -1447,7 +1447,7 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_156
       rect:
@@ -1456,7 +1456,7 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_157
       rect:
@@ -1465,7 +1465,7 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_158
       rect:
@@ -1474,7 +1474,7 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_159
       rect:
@@ -1483,7 +1483,7 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_160
       rect:
@@ -1492,7 +1492,7 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_161
       rect:
@@ -1501,7 +1501,7 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_162
       rect:
@@ -1510,7 +1510,7 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_163
       rect:
@@ -1519,7 +1519,7 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_164
       rect:
@@ -1528,7 +1528,7 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_165
       rect:
@@ -1537,7 +1537,7 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_166
       rect:
@@ -1546,7 +1546,7 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_167
       rect:
@@ -1555,7 +1555,7 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_168
       rect:
@@ -1564,7 +1564,7 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_169
       rect:
@@ -1573,7 +1573,7 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_170
       rect:
@@ -1582,7 +1582,7 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_171
       rect:
@@ -1591,7 +1591,7 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_172
       rect:
@@ -1600,7 +1600,7 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_173
       rect:
@@ -1609,7 +1609,7 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_174
       rect:
@@ -1618,7 +1618,7 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_175
       rect:
@@ -1627,7 +1627,7 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_176
       rect:
@@ -1636,7 +1636,7 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: lpcfemalechain_177
       rect:
@@ -1645,7 +1645,7 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 1
+      alignment: 7
       pivot: {x: 0, y: 0}
   spritePackingTag: 
   userData: 

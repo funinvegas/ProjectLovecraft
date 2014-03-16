@@ -27,21 +27,21 @@ function FixedUpdate()
 		var newLoc:Vector2 = new Vector2(target.transform.position.x, target.transform.position.y) + (delta.normalized * maxDistance);
 		
 		if (newLoc.x < LevelLoader.MaxLeftPixel + (screenPixelsWide)) {
-			newLoc.x = hundredRound(LevelLoader.MaxLeftPixel + (screenPixelsWide));
+			newLoc.x = LevelLoader.MaxLeftPixel + (screenPixelsWide);
 			//Debug.Log("Capping X at " + hundredRound(LevelLoader.MaxLeftPixel - (screenPixelsWide)));
 		}
 		if (newLoc.x > LevelLoader.MaxRightPixel - (screenPixelsWide)) {
-			newLoc.x = hundredRound(LevelLoader.MaxRightPixel - (screenPixelsWide));
+			newLoc.x = LevelLoader.MaxRightPixel - (screenPixelsWide);
 			//Debug.Log("Capping X at " + hundredRound(LevelLoader.MaxRightPixel - (screenPixelsWide)));
 		}
 		if (newLoc.y > LevelLoader.MaxTopPixel - (screenPixelsTall)) {
-			newLoc.y = hundredRound(LevelLoader.MaxTopPixel - (screenPixelsTall));
+			newLoc.y = LevelLoader.MaxTopPixel - (screenPixelsTall);
 		}
 		if (newLoc.y < LevelLoader.MaxBottomPixel + (screenPixelsTall)) {
-			newLoc.y = hundredRound(LevelLoader.MaxBottomPixel + (screenPixelsTall));
+			newLoc.y = LevelLoader.MaxBottomPixel + (screenPixelsTall);
 		}
-		thisTransform.position.x = newLoc.x;
-		thisTransform.position.y = newLoc.y;
+		thisTransform.position.x = hundredRound(newLoc.x);
+		thisTransform.position.y = hundredRound(newLoc.y);
 		//Debug.Log("Screen.width = " + screenPixelsWide);
 /*		Debug.Log("Camera.main.pixelWidth = " + Camera.main.pixelWidth/200);
 		Debug.Log("Camera.main.pixelHeight = " + Camera.main.pixelHeight/200);
