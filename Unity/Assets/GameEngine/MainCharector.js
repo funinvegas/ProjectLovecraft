@@ -17,6 +17,8 @@ static var globalPlayerObject:MainCharector = null;
 var useCharge = false;
 var attackRange:float = 2 * 0.32;
 
+static var worldCharectors:Array = new Array();
+
 class PlayerState {
 	var player:MainCharector = null;
 	function PlayerState(previousState:PlayerState) {
@@ -24,6 +26,9 @@ class PlayerState {
 		Debug.Log("newState = " + this);
 		if(previousState) {
 			player = previousState.player;
+			if (player !== MainCharector.globalPlayerObject) {
+				Debug.Log("PlayerState change Moving " + player.rigidbody2D.velocity.x + "," + player.rigidbody2D.velocity.y);
+			}
 		}
 	}
 	function OnFire1Down() {
@@ -90,7 +95,9 @@ class PlayerStateCharging extends PlayerState {
 	}
 	function OnFire1Down() {
 		if( startTime > 0 && Time.time - startTime > 0.5) {
-			(player.chargeUp.GetComponent("Animator") as Animator).Play("basicCharge");		
+			if (player.chargeUp) {
+				(player.chargeUp.GetComponent("Animator") as Animator).Play("basicCharge");
+			}
 			startTime = 0;
 		}
 		return this;
@@ -107,7 +114,9 @@ class PlayerStateCharging extends PlayerState {
 	}
 	function Destroy() {
 		player.speedFactor = 1;
-		(player.chargeUp.GetComponent("Animator") as Animator).Play("Idle");		
+		if (player.chargeUp) {
+			(player.chargeUp.GetComponent("Animator") as Animator).Play("Idle");		
+		}
 	}
 }
 class PlayerStateSwinging extends PlayerState {
@@ -159,9 +168,39 @@ class PlayerStateSwinging extends PlayerState {
 		}
 		//player.anim.SetInteger("action", 1);
 		player.anim.speed = 1;
-		(player.weaponSwish.GetComponent("Animator") as Animator).Play("SmallSwish");		
+		if (player.weaponSwish) {
+			(player.weaponSwish.GetComponent("Animator") as Animator).Play("SmallSwish");		
+		}
+	
+	}
+	function AttackTarget( target:MainCharector ) {
+		var transform = player.transform;
+		var centerTargetOffset = player.centerTargetOffset;
+		var delta:Vector2 = (target.transform.position + target.centerTargetOffset) - (transform.position + centerTargetOffset);
+		if (delta.magnitude < player.attackRange) {
+			var injured = target.Injure();
+			if (injured) {
+				var normal = delta.normalized * 10;
+				Debug.Log("Setting X:" + normal.x + " , " + normal.y );
+				target.rigidbody2D.velocity = new Vector2(normal.x, normal.y);
+				Debug.Log("Result X:" + target.rigidbody2D.velocity.x + " , " + target.rigidbody2D.velocity.y );
+//				target.rigidbody2D.AddForce(delta.normalized * 100);
+			}
+		}
 	}
 	function OnAnimationEvent(event:String) {
+		if (event == "Attack") {
+			if (player.playerControled) {
+				for( var i = 0; i < MainCharector.worldCharectors.length; ++i) {
+					var target:MainCharector = MainCharector.worldCharectors[i] as MainCharector;
+					if (target !== player) {
+						AttackTarget(target);
+					}
+				}
+			} else {
+				AttackTarget(MainCharector.globalPlayerObject);
+			}
+		}
 		if (event == "WalkCycle") {
 			return new PlayerStateWalking(this);
 		}
@@ -200,23 +239,47 @@ function Start () {
 		//Debug.Log(" CHILD NAME = " + (child as Transform).name);
 		
 	}
+	MainCharector.worldCharectors.Push(this);
 }
 function ActionFinished() {
-	currentAction = 0;
+	//currentAction = 0;
 	//anim.SetInteger("action", currentAction);
 }
 
 function OnAnimationEvent(event:String) {
 	//Debug.Log("Outer OnAnimationEvent");
+	if (this !== MainCharector.globalPlayerObject) {
+		Debug.Log("Start Animation Event Already Moving " + rigidbody2D.velocity.x + "," + rigidbody2D.velocity.y);
+	}
 	oldState = playerState;
 	playerState = playerState.OnAnimationEvent(event);
 	destroyOldState();
+	if (this !== MainCharector.globalPlayerObject) {
+		Debug.Log("Finish Animation Event Already Moving " + rigidbody2D.velocity.x + "," + rigidbody2D.velocity.y);
+	}
 }
+
+private var lastInjureTime:float = 0;
+var injuryImmunity:float = 20.3;
+function Injure() {
+	if (Time.time - lastInjureTime > injuryImmunity) {
+		lastInjureTime = Time.time;
+		Debug.Log(" Setting lastInjure Time = " + lastInjureTime);
+		return true;
+	}
+	return false;
+}
+
 function stopMoving() {
-	rigidbody2D.velocity = new Vector2(0,0);
+	if (Time.time - lastInjureTime > injuryImmunity) {
+		rigidbody2D.velocity = new Vector2(0,0);
+	}
 }
+
 function UpdateDirection(xAxis:float, yAxis:float) {
-	rigidbody2D.velocity = new Vector2(xAxis * maxSpeed * speedFactor, yAxis * maxSpeed * speedFactor);
+	if( Time.time - lastInjureTime > injuryImmunity) {
+		rigidbody2D.velocity = new Vector2(xAxis * maxSpeed * speedFactor, yAxis * maxSpeed * speedFactor);
+	}
 	var newDirection = direction;
 	if (Mathf.Abs(xAxis) > Mathf.Abs(yAxis)) {
 		// moving east west
@@ -271,7 +334,8 @@ function FixedUpdate () {
 		PlayerInput();
 	} else {
 		AIInput();
-	} 
+	}
+	transform.position.z = 5 - ((transform.position.y/-0.32) / 10);
 }
 function AIInput() {
 	if (globalPlayerObject) {
@@ -294,6 +358,19 @@ function AIInput() {
 			playerState = playerState.OnFire1Up();
 			destroyOldState();
 		}
+		var fromVec:Vector2 = globalPlayerObject.transform.position + globalPlayerObject.centerTargetOffset;
+		var toVec:Vector2 = transform.position + centerTargetOffset;
+		//var angle = Vector2.Angle(fromVec, toVec);
+		//Debug.Log("Angle = " + angle);
+		var zeroAngle = new Vector2( 0, 1 );
+		var ang:float = Vector2.Angle(zeroAngle, delta);
+		//var cross:Vector3 = Vector3.Cross(fromVec, toVec);	 
+		//if (cross.z > 0)
+		//	ang = 360 - ang;
+		if (delta.x < 0) {
+			ang = 360 - ang;
+		}
+		//Debug.Log(ang);
 	}
 }
 
@@ -320,8 +397,10 @@ function PlayerInput() {
 	var xAxis = Input.GetAxis("Horizontal");
 	var yAxis = Input.GetAxis("Vertical");
 	playerState = playerState.ApplyDirection(xAxis, yAxis);
-		destroyOldState();
+	destroyOldState();
 }
 function Update () {
-
+	//var tar:MainCharector = (MainCharector.worldCharectors[0] as MainCharector);
+	//var rigid = tar.rigidbody2D;
+	//Debug.Log("MainCharector.worldCharectors[0].rigidbody2D.velocity = " + rigid.velocity);
 }
