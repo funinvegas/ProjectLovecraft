@@ -46,24 +46,76 @@
         }, 
         {
          "height":50,
-         "name":"Objects",
+         "name":"Objects_SpawnPoints",
          "objects":[
                 {
                  "height":32,
-                 "name":"Character Starting Point",
+                 "name":"Charector Start",
                  "properties":
                     {
-                     "startpoint":"1"
+                     "playerLoadPoint":"1"
                     },
-                 "type":"",
+                 "type":"startPoint",
                  "visible":true,
                  "width":32,
-                 "x":736,
-                 "y":640
+                 "x":759,
+                 "y":651
+                }, 
+                {
+                 "height":0,
+                 "name":"Wolf 1",
+                 "properties":
+                    {
+                     "mobType":"wolf"
+                    },
+                 "type":"mobPoint",
+                 "visible":true,
+                 "width":0,
+                 "x":325,
+                 "y":274
+                }, 
+                {
+                 "height":0,
+                 "name":"Wolf 1",
+                 "properties":
+                    {
+                     "mobType":"wolf"
+                    },
+                 "type":"mobPoint",
+                 "visible":true,
+                 "width":0,
+                 "x":325,
+                 "y":451
+                }, 
+                {
+                 "height":0,
+                 "name":"Wolf 1",
+                 "properties":
+                    {
+                     "mobType":"wolf"
+                    },
+                 "type":"mobPoint",
+                 "visible":true,
+                 "width":0,
+                 "x":435,
+                 "y":360
+                }, 
+                {
+                 "height":0,
+                 "name":"Wolf 1",
+                 "properties":
+                    {
+                     "mobType":"wolf"
+                    },
+                 "type":"mobPoint",
+                 "visible":true,
+                 "width":0,
+                 "x":231,
+                 "y":362
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":false,
+         "visible":true,
          "width":50,
          "x":0,
          "y":0

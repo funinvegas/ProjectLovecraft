@@ -32,10 +32,30 @@
    eJzt0MEJwkAQBdDBQOJVhBRgeTalliE5mDSQXkwacGEvKh72EqLyHgzswF+YmQgAft1Yv/Zt/TkHsLbjJuJa5XdX5R7gHx22a0+Q3ZuI6anmpuzfKeXOqS6F+aXt3u65L7zvLc3fpxq+ZA8AAAAAAJb3AJKPDMg=
   </data>
  </layer>
- <objectgroup name="Objects" width="50" height="50" visible="0">
-  <object name="Character Starting Point" x="736" y="640" width="32" height="32">
+ <objectgroup name="Objects_SpawnPoints" width="50" height="50">
+  <object name="Charector Start" type="startPoint" x="759" y="651" width="32" height="32">
    <properties>
-    <property name="startpoint" value="1"/>
+    <property name="playerLoadPoint" value="1"/>
+   </properties>
+  </object>
+  <object name="Wolf 1" type="mobPoint" x="325" y="274">
+   <properties>
+    <property name="mobType" value="wolf"/>
+   </properties>
+  </object>
+  <object name="Wolf 1" type="mobPoint" x="325" y="451">
+   <properties>
+    <property name="mobType" value="wolf"/>
+   </properties>
+  </object>
+  <object name="Wolf 1" type="mobPoint" x="435" y="360">
+   <properties>
+    <property name="mobType" value="wolf"/>
+   </properties>
+  </object>
+  <object name="Wolf 1" type="mobPoint" x="231" y="362">
+   <properties>
+    <property name="mobType" value="wolf"/>
    </properties>
   </object>
  </objectgroup>
