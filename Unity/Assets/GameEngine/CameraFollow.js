@@ -1,7 +1,7 @@
 ﻿
 #pragma strict
 
-var target : Transform;
+private var target : Transform;
 var smoothTime = 0.3;
 private var thisTransform : Transform;
 private var velocity : Vector2;
@@ -17,6 +17,12 @@ function hundredRound(num:Number) {
 }
 function FixedUpdate() 
 {
+	if (!target && MainCharector.globalPlayerObject) {
+		target = MainCharector.globalPlayerObject.transform;
+	}
+	if (!target) {
+		return;
+	}
 	var delta:Vector2 = thisTransform.position - target.position;
 	var mag:Number = delta.magnitude;
 	if (mag > maxDistance) {

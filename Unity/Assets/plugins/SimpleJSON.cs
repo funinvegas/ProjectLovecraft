@@ -676,7 +676,7 @@ namespace SimpleJSON
  
     public class JSONClass : JSONNode, IEnumerable
     {
-        private Dictionary<string,JSONNode> m_Dict = new Dictionary<string,JSONNode>();
+        public Dictionary<string,JSONNode> m_Dict = new Dictionary<string,JSONNode>();
         public override JSONNode this[string aKey]
         {
             get
