@@ -20,7 +20,15 @@ class TileObject {
 	 var polygon:Array = new Array();
 	 var ellipse = false;
 	 var polyline:Array = new Array();
-	 
+	 function getProperty( propertyName:String ) {
+	 	for( var i = 0; i < properties.length; ++i) {
+	 		var p:TileProperty = properties[i] as TileProperty;
+	 		if(p.pName == propertyName) {
+	 			return p.pValue;
+	 		}
+	 	}
+	 	return null;
+	 }
 	function InitFromJSON( json:JSONNode) {
 		height = json['height'].AsInt || 0;
 		objectName = json['name'].Value || "";
@@ -31,14 +39,15 @@ class TileObject {
 		y = json['y'].AsInt || 0;
 		ellipse = json['ellipse'].AsBool || false;
 		
-		var jsonProp = json['properties'].AsArray;
-		var i = 0;
+		var jsonProp = json['properties'].AsObject;
+		var i:int = 0;
 		var point = new TilePoint();
 		if(jsonProp) {
-			for(i = 0; i < jsonProp.Count; ++i) {
+			for(var key in jsonProp.m_Dict.Keys) {
+				Debug.Log("keyValue:" + key + " , " + jsonProp.m_Dict[key]);
 				var prop = new TileProperty();
-				prop.pName = jsonProp[i]['name'].Value || "";
-				prop.pValue = jsonProp[i]['value'].Value || "";
+				prop.pName = key;
+				prop.pValue = jsonProp.m_Dict[key];
 				properties.Push(prop);
 			}
 		}

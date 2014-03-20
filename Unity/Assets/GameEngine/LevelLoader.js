@@ -36,6 +36,10 @@ function Start () {
   	MaxBottomPixel = transform.position.y - ((fileData['height'].AsInt * fileData['tileheight'].AsInt / 100) - 0.16);
 
 	LoadPhysics();
+	
+	LoadPlayerCharector();
+
+ 	LoadMonsters();
  
  	Debug.Log(" Screen width = " + Screen.width);
  	Debug.Log(" Screen height = " + Screen.height);
@@ -266,4 +270,67 @@ function LoadPhysics() {
 	}
 	Debug.Log("LoadPhysics end " + tileLayers.length);
 }
+var typePlayer:Transform;
+function FindLoadPoint(objects:Array) {
+	for( var i = 0; i < objects.length; ++i) {
+		var obj:TileObject = objects[i] as TileObject;
+		if (obj.type == "startPoint" && obj.getProperty("playerLoadPoint")) {
+			Instantiate(typePlayer, Vector3 (obj.x / 100, obj.y / -100, 5), Quaternion.identity);
+			return true;
+		}
+	}
+	return false;
+}
+function LoadPlayerCharector() {
+	var c:String = "Objects_";
+	for( var i = 0; i < tileLayers.length; ++i) {
+		var layer = tileLayers[i] as TileLayer;
+		if (layer.layerName.Length >= c.Length) {
+			var sub:String = layer.layerName.Substring(0, c.Length);
+			if( sub == c) {
+				Debug.Log(layer.layerName + " matches");
+				if (FindLoadPoint(layer.objects)) {
+					return;
+				}
+			} else {
+				Debug.Log(sub + " != " + c);
+			}
+		}
+	}
+}
+var typeWolf:Transform;
 
+function MobFactory(mobType:String, mobX:float, mobY:float) {
+	var type:Transform = typeWolf; // default type
+	switch (mobType) {
+		case "wolf":
+			type = typeWolf;
+			break;
+	}
+	if (type) {
+		Instantiate(type, Vector3 (mobX / 100, mobY / -100, 5), Quaternion.identity);
+	}
+}
+function SpawnMonsters(objects:Array) {
+	for( var i = 0; i < objects.length; ++i) {
+		var obj:TileObject = objects[i] as TileObject;
+		if (obj.type == "mobPoint" && obj.getProperty("mobType")) {
+			MobFactory(obj.getProperty("mobType"), obj.x, obj.y);
+		}
+	}
+}
+function LoadMonsters() {
+	var c:String = "Objects_";
+	for( var i = 0; i < tileLayers.length; ++i) {
+		var layer = tileLayers[i] as TileLayer;
+		if (layer.layerName.Length >= c.Length) {
+			var sub:String = layer.layerName.Substring(0, c.Length);
+			if( sub == c) {
+				Debug.Log(layer.layerName + " matches");
+				SpawnMonsters(layer.objects);
+			} else {
+				Debug.Log(sub + " != " + c);
+			}
+		}
+	}
+}

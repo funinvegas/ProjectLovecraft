@@ -180,7 +180,10 @@ class PlayerStateSwinging extends PlayerState {
 		if (delta.magnitude < player.attackRange) {
 			var injured = target.Injure();
 			if (injured) {
-				var normal = delta.normalized * 10;
+				var normal = delta.normalized;
+				if (target != MainCharector.globalPlayerObject) {
+					normal *= 10;
+				}
 				Debug.Log("Setting X:" + normal.x + " , " + normal.y );
 				target.rigidbody2D.velocity = new Vector2(normal.x, normal.y);
 				Debug.Log("Result X:" + target.rigidbody2D.velocity.x + " , " + target.rigidbody2D.velocity.y );
