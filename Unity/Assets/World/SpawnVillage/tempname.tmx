@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="64" height="40" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="terrain" tilewidth="32" tileheight="32">
+  <image source="../../Resources/GPL3.0/terrain.png" trans="ffffff" width="672" height="736"/>
+ </tileset>
+ <tileset firstgid="484" name="terrain_atlas" tilewidth="32" tileheight="32">
+  <image source="../../Resources/GPL3.0/terrain_atlas.png" trans="ffffff" width="1024" height="1024"/>
+ </tileset>
+ <tileset firstgid="1508" name="base_out_atlas" tilewidth="32" tileheight="32">
+  <image source="../../Resources/GPL3.0/base_out_atlas.png" trans="ffffff" width="1024" height="1024"/>
+ </tileset>
+ <tileset firstgid="2532" name="tree terrains" tilewidth="32" tileheight="32">
+  <image source="../../Resources/GPL3.0/tree terrains.png" trans="ffffff" width="640" height="640"/>
+ </tileset>
+ <layer name="Terrain_Ground" width="64" height="40">
+  <data encoding="base64" compression="zlib">
+   eJyNmFtu4zAQBHX/k1q2fIddAzGgVKqG/BBsydQ8erqbTM7jOJ7/r8fP5+c6f67vc94/Ze2JZ/e1Fo+xT6x9IMbj9vzEOn4+8N4DMe/rWfP9+4mYXMM87Nnqfh7d+z1e4cvaJuyZlzUz7kOumhWxIa7EYcLuiZzvIdeql8LFeFE118U6yFXrkc/JyVfMyuKtuEh9FRYV37TCz8L6/q7p0rzE8C8t2/3kE+ZBT3lW2iRWloeYmPapgap/d0aTN1me1/G3TvrN1K/prjyL2qAPGUet19JX+TTz2L3VZpyzWs2TSxO7nJj8esLHeDf5M2ObH5RPWszix5R/NdPCcNKR6ZjeWvNf4VZ11dzLa8nH2icmfTMn/ZDrC0f2a3i+jt+zn/x08imrtbhYGBhXaz81jpHLhS35YRhNGNReVDpbaaTmU/w+f+ZmcUp3U47Chv3W3Dg/q5dxqlebQeFvmln1bLyY8Ca2xXvzEduPDB/z1Jp7zbHWciYv6WHyItP3pP1pJpZ32lN2ve9zXRt4T95o95M+GOu61fJCXvMfe84apj124m/tJaV75uN8ai+ueqmVnVqLP1Zj8Ypri3Pkru1vzPfGb/yk/5bP0gPL0+gFptPiQ/mK1cjcxK68wjCiZo27Fv+SmJaf7xe/Jw5azOv4jUthy9/rzDDx2LyP39l7caHOKPWsNFn6mvjG+mrupesd3zWOcU8w/ygsGc9mUdqqHi2X9WA9chaXxKtzQuUwL5m0VNywHPWe5bIZVZ7yzsrNM4PFY953vE88OOfy1EnXpfHyWsO98r6Pv5wozzQPXPmCaWbVo9U+7cHlMcSdGK7OQ8YFi/t59v2795IY9U55VHkNcZ48a4V5acdmwXzFqe9v0//ebY+3udZnaaL6Jv67vlW+zFjlH1VL7Sl15rE1pb97reWprJV5Smd1FrG+i0d15igeGVY2U/u9elrxbtfDyJHpPeOyXYUDtWPrSvPs1+7LH2wfqNlV7VXr6nwxeSLjTDVazbbeOFW+WN5WHHnKup35msdM/mVcv9dwHV4/65tymh8U9qXnmm/txzYz84cdzRmH6IfElZyd+l31yX7qTGV7T2m15sV8jGF7xnQm4ex3vMK0NHFmpTWbn+E7zXnioPnN6txgeFDbhtGkoeKv1Wsx7V3bB817S2+V1+pif+TVFOfOg1V9O95YmNiZxrzOeqLXGl7fuO+Iw++s0XRQHlTnJeK5owOe38vrTHvmCcY18wH2SB6UNkxf5uXmG+VtFmOH3zWz4qHNz2p6yzPqYZo5+2ZtxV3rm+/9A8G/HAg=
+  </data>
+ </layer>
+ <layer name="Terrain_Clear" width="64" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20ON6AAAAAAAAAAAACANwMoAAAB
+  </data>
+ </layer>
+ <layer name="Terrain_Clear2" width="64" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20ON6AAAAAAAAAAAACANwMoAAAB
+  </data>
+ </layer>
+ <layer name="Terrain_Doodads" width="64" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20ON6AAAAAAAAAAAACANwMoAAAB
+  </data>
+ </layer>
+ <objectgroup name="Objects_Spawnpoints" width="64" height="40" visible="0">
+  <object name="Wolf" type="mobPoint" x="448" y="480" width="32" height="32">
+   <properties>
+    <property name="mobType" value="wolf"/>
+   </properties>
+  </object>
+  <object name="Wolf" type="mobPoint" x="555" y="380" width="32" height="32">
+   <properties>
+    <property name="mobType" value="wolf"/>
+   </properties>
+  </object>
+  <object name="Wolf" type="mobPoint" x="562" y="477" width="32" height="32">
+   <properties>
+    <property name="mobType" value="wolf"/>
+   </properties>
+  </object>
+  <object name="Wolf" type="mobPoint" x="587" y="552" width="32" height="32">
+   <properties>
+    <property name="mobType" value="wolf"/>
+   </properties>
+  </object>
+  <object name="Wolf" type="mobPoint" x="674" y="609" width="32" height="32">
+   <properties>
+    <property name="mobType" value="wolf"/>
+   </properties>
+  </object>
+  <object name="Wolf" type="mobPoint" x="716" y="493" width="32" height="32">
+   <properties>
+    <property name="mobType" value="wolf"/>
+   </properties>
+  </object>
+  <object name="Wolf" type="mobPoint" x="706" y="445" width="32" height="32">
+   <properties>
+    <property name="mobType" value="wolf"/>
+   </properties>
+  </object>
+  <object name="Wolf" type="mobPoint" x="675" y="371" width="32" height="32">
+   <properties>
+    <property name="mobType" value="wolf"/>
+   </properties>
+  </object>
+  <object name="Wolf" type="mobPoint" x="745" y="291" width="32" height="32">
+   <properties>
+    <property name="mobType" value="wolf"/>
+   </properties>
+  </object>
+  <object name="Wolf" type="mobPoint" x="844" y="271" width="32" height="32">
+   <properties>
+    <property name="mobType" value="wolf"/>
+   </properties>
+  </object>
+  <object name="Wolf" type="mobPoint" x="902" y="403" width="32" height="32">
+   <properties>
+    <property name="mobType" value="wolf"/>
+   </properties>
+  </object>
+  <object name="Wolf" type="mobPoint" x="869" y="502" width="32" height="32">
+   <properties>
+    <property name="mobType" value="wolf"/>
+   </properties>
+  </object>
+  <object name="Wolf" type="mobPoint" x="804" y="604" width="32" height="32">
+   <properties>
+    <property name="mobType" value="wolf"/>
+   </properties>
+  </object>
+  <object name="Wolf" type="mobPoint" x="779" y="661" width="32" height="32">
+   <properties>
+    <property name="mobType" value="wolf"/>
+   </properties>
+  </object>
+  <object name="Wolf" type="mobPoint" x="876" y="728" width="32" height="32">
+   <properties>
+    <property name="mobType" value="wolf"/>
+   </properties>
+  </object>
+  <object name="Wolf" type="mobPoint" x="921" y="656" width="32" height="32">
+   <properties>
+    <property name="mobType" value="wolf"/>
+   </properties>
+  </object>
+  <object name="Wolf" type="mobPoint" x="819" y="547" width="32" height="32">
+   <properties>
+    <property name="mobType" value="wolf"/>
+   </properties>
+  </object>
+  <object name="Wolf" type="mobPoint" x="786" y="487" width="32" height="32">
+   <properties>
+    <property name="mobType" value="wolf"/>
+   </properties>
+  </object>
+  <object name="Wolf" type="mobPoint" x="791" y="411" width="32" height="32">
+   <properties>
+    <property name="mobType" value="wolf"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Collision_Walking" width="64" height="40" visible="0"/>
+ <objectgroup name="Zones" width="64" height="40" visible="0">
+  <object name="Zone In" x="128" y="480" width="32" height="64">
+   <properties>
+    <property name=" zonefrom" value=" eastofcabin"/>
+   </properties>
+  </object>
+  <object name="Zone Out" x="0" y="480" width="32" height="64">
+   <properties>
+    <property name="zoneto" value="eastofcabin"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

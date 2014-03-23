@@ -255,7 +255,7 @@ function DrawPhysics(objects:Array) {
 function LoadPhysics() {
 	Debug.Log("LoadPhysics start " + tileLayers.length);
 	DrawMapBorders();
-	var c:String = "Collission_";
+	var c:String = "Collision_";
 	for( var i = 0; i < tileLayers.length; ++i) {
 		var layer = tileLayers[i] as TileLayer;
 		if (layer.layerName.Length >= c.Length) {
