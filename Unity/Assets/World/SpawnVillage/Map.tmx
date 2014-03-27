@@ -29,7 +29,7 @@
  </layer>
  <layer name="Terrain_Doodads" width="50" height="50">
   <data encoding="base64" compression="zlib">
-   eJzt0MEJwkAQBdDBQOJVhBRgeTalliE5mDSQXkwacGEvKh72EqLyHgzswF+YmQgAft1Yv/Zt/TkHsLbjJuJa5XdX5R7gHx22a0+Q3ZuI6anmpuzfKeXOqS6F+aXt3u65L7zvLc3fpxq+ZA8AAAAAAJb3AJKPDMg=
+   eJzt1VEKgkAQxvEpQXuNoAN4kp6CvUqXso4RPZQX6C7VBdoQQaWH9WHYcfj/YNGVUXb9WEYEALB0z3I835f/6wAgt9Na5Fp097eimwOw77jKvYLlqTd63w4z8nhVIu/B+FRp7zWx7hzHJbFe23byP3eJ//ce1/+Io1Xcx5w8LDs42YeXPLwgD1vo57ZwPmzxkgf9HBrIwxb6uS2cD1u85EE/hwbysKXv52Fw/Z39MHmeq86LL8EgGJg=
   </data>
  </layer>
  <objectgroup name="Objects_SpawnPoints" width="50" height="50">
@@ -59,7 +59,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Collission_Walking" width="50" height="50" visible="0">
+ <objectgroup name="Collision_Walking" width="50" height="50" visible="0">
   <object x="689" y="430" width="129" height="210"/>
   <object x="690" y="672" width="128" height="64"/>
   <object x="690" y="737">
@@ -108,5 +108,17 @@
   </object>
   <object x="819" y="421" width="44" height="26"/>
   <object x="640" y="419" width="49" height="27"/>
+ </objectgroup>
+ <objectgroup name="Zones" width="50" height="50">
+  <object name="Zone Out" x="1568" y="480" width="32" height="64">
+   <properties>
+    <property name="zoneto" value="tempname"/>
+   </properties>
+  </object>
+  <object name="Zone In" x="1440" y="480" width="32" height="64">
+   <properties>
+    <property name="zonefrom" value="tempname"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>
