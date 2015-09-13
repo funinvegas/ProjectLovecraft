@@ -170,14 +170,14 @@ function DrawTileLayers() {
 
 function DrawEllipse(obj:TileObject) {
 	var elip:Transform = Instantiate(physicsTemplate, Vector3(0.16 + transform.position.x + obj.x / 100, -0.16 + transform.position.y - obj.y / 100, 5), Quaternion.identity);
-	var colider:CircleCollider2D = elip.gameObject.AddComponent("CircleCollider2D") as CircleCollider2D;
+	var colider:CircleCollider2D = elip.gameObject.AddComponent.<CircleCollider2D>() as CircleCollider2D;
 	colider.transform.parent = transform;
 	colider.radius = (obj.width + obj.height)/400;
 }
 
 function DrawPolygon(obj:TileObject) {
 	var poly:Transform = Instantiate(physicsTemplate, Vector3(-0.16 + transform.position.x + obj.x / 100, 0.16 + transform.position.y - obj.y / 100, 5), Quaternion.identity);
-	var colider:PolygonCollider2D = poly.gameObject.AddComponent("PolygonCollider2D") as PolygonCollider2D;
+	var colider:PolygonCollider2D = poly.gameObject.AddComponent.<PolygonCollider2D>() as PolygonCollider2D;
 	colider.transform.parent = transform;
 	var points:Vector2[] = new Vector2[obj.polygon.length];
 	for( var i = 0; i < obj.polygon.length; ++i) {
@@ -230,7 +230,7 @@ function DrawMapBorders() {
 }
 function DrawRectangle(obj:TileObject) {
 	var poly:Transform = Instantiate(physicsTemplate, Vector3(-0.16 + transform.position.x + obj.x / 100 + obj.width/200, 0.16 + transform.position.y - obj.y / 100 - obj.height/200, 5), Quaternion.identity);
-	var colider:BoxCollider2D = poly.gameObject.AddComponent("BoxCollider2D") as BoxCollider2D;
+	var colider:BoxCollider2D = poly.gameObject.AddComponent.<BoxCollider2D>() as BoxCollider2D;
 	colider.transform.parent = transform;
 	colider.size.x = obj.width / 100;
 	colider.size.y = obj.height / 100;

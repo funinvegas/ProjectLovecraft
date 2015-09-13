@@ -27,7 +27,8 @@ class PlayerState {
 		if(previousState) {
 			player = previousState.player;
 			if (player !== MainCharector.globalPlayerObject) {
-				Debug.Log("PlayerState change Moving " + player.rigidbody2D.velocity.x + "," + player.rigidbody2D.velocity.y);
+				var rigidBody2D:Rigidbody2D = player.GetComponent.<Rigidbody2D>();
+				Debug.Log("PlayerState change Moving " + rigidBody2D.velocity.x + "," + rigidBody2D.velocity.y);
 			}
 		}
 	}
@@ -185,8 +186,8 @@ class PlayerStateSwinging extends PlayerState {
 					normal *= 10;
 				}
 				Debug.Log("Setting X:" + normal.x + " , " + normal.y );
-				target.rigidbody2D.velocity = new Vector2(normal.x, normal.y);
-				Debug.Log("Result X:" + target.rigidbody2D.velocity.x + " , " + target.rigidbody2D.velocity.y );
+				(target.GetComponent("Rigidbody2D") as Rigidbody2D).velocity = new Vector2(normal.x, normal.y);
+				Debug.Log("Result X:" + (target.GetComponent("Rigidbody2D") as Rigidbody2D).velocity.x + " , " + (target.GetComponent("Rigidbody2D") as Rigidbody2D).velocity.y );
 //				target.rigidbody2D.AddForce(delta.normalized * 100);
 			}
 		}
@@ -252,13 +253,13 @@ function ActionFinished() {
 function OnAnimationEvent(event:String) {
 	//Debug.Log("Outer OnAnimationEvent");
 	if (this !== MainCharector.globalPlayerObject) {
-		Debug.Log("Start Animation Event Already Moving " + rigidbody2D.velocity.x + "," + rigidbody2D.velocity.y);
+		Debug.Log("Start Animation Event Already Moving " + (GetComponent("Rigidbody2D") as Rigidbody2D).velocity.x + "," + (GetComponent("Rigidbody2D") as Rigidbody2D).velocity.y);
 	}
 	oldState = playerState;
 	playerState = playerState.OnAnimationEvent(event);
 	destroyOldState();
 	if (this !== MainCharector.globalPlayerObject) {
-		Debug.Log("Finish Animation Event Already Moving " + rigidbody2D.velocity.x + "," + rigidbody2D.velocity.y);
+		Debug.Log("Finish Animation Event Already Moving " + (GetComponent("Rigidbody2D") as Rigidbody2D).velocity.x + "," + (GetComponent("Rigidbody2D") as Rigidbody2D).velocity.y);
 	}
 }
 
@@ -275,13 +276,13 @@ function Injure() {
 
 function stopMoving() {
 	if (Time.time - lastInjureTime > injuryImmunity) {
-		rigidbody2D.velocity = new Vector2(0,0);
+		(GetComponent("Rigidbody2D") as Rigidbody2D).velocity = new Vector2(0,0);
 	}
 }
 
 function UpdateDirection(xAxis:float, yAxis:float) {
 	if( Time.time - lastInjureTime > injuryImmunity) {
-		rigidbody2D.velocity = new Vector2(xAxis * maxSpeed * speedFactor, yAxis * maxSpeed * speedFactor);
+		(GetComponent("Rigidbody2D") as Rigidbody2D).velocity = new Vector2(xAxis * maxSpeed * speedFactor, yAxis * maxSpeed * speedFactor);
 	}
 	var newDirection = direction;
 	if (Mathf.Abs(xAxis) > Mathf.Abs(yAxis)) {
@@ -321,7 +322,7 @@ function UpdateDirection(xAxis:float, yAxis:float) {
 		//anim.SetInteger("direction", newDirection);
 		direction = newDirection;
 	}
-	var mag = rigidbody2D.velocity.magnitude;
+	var mag = (GetComponent("Rigidbody2D") as Rigidbody2D).velocity.magnitude;
 	anim.speed = mag/maxAnimationSpeed;
 
 }
